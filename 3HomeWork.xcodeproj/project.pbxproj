@@ -7,23 +7,51 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		168186B94F2B3F3E54160AD7 /* Pods_3HomeWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EC1BE3E89A41E22DB1A5E2E /* Pods_3HomeWork.framework */; };
 		4BA06DB62996687E00216C30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA06DB52996687E00216C30 /* AppDelegate.swift */; };
 		4BA06DB82996687E00216C30 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA06DB72996687E00216C30 /* SceneDelegate.swift */; };
-		4BA06DBA2996687E00216C30 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA06DB92996687E00216C30 /* ViewController.swift */; };
-		4BA06DBD2996687E00216C30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BA06DBB2996687E00216C30 /* Main.storyboard */; };
+		4BA06DBA2996687E00216C30 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA06DB92996687E00216C30 /* MenuViewController.swift */; };
 		4BA06DBF2996687E00216C30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BA06DBE2996687E00216C30 /* Assets.xcassets */; };
-		4BA06DC22996687E00216C30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BA06DC02996687E00216C30 /* LaunchScreen.storyboard */; };
+		4BA06DCA29966D0700216C30 /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA06DC929966D0700216C30 /* TabbarViewController.swift */; };
+		4BA06DCD29966EE900216C30 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA06DCC29966EE900216C30 /* ProfileViewController.swift */; };
+		4BA06DCF299679D700216C30 /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA06DCE299679D700216C30 /* MenuCollectionViewCell.swift */; };
+		4BA06E022998CB0700216C30 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA06E012998CB0700216C30 /* Model.swift */; };
+		4BA06E042998CC2900216C30 /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA06E032998CC2900216C30 /* NetworkLayer.swift */; };
+		4BA06EA0299FA40A00216C30 /* BasketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA06E9F299FA40A00216C30 /* BasketViewController.swift */; };
+		4BA06EA2299FB9BA00216C30 /* SelectProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA06EA1299FB9BA00216C30 /* SelectProductViewController.swift */; };
+		4BA06EA4299FDF1700216C30 /* ReviewsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA06EA3299FDF1700216C30 /* ReviewsCollectionViewCell.swift */; };
+		4BA06EA829A3AF7700216C30 /* BasketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA06EA729A3AF7700216C30 /* BasketTableViewCell.swift */; };
+		4BA06EB729A68D8D00216C30 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4BA06EB629A68D8D00216C30 /* GoogleService-Info.plist */; };
+		4BA06EBF29A7741100216C30 /* UsDef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA06EBE29A7741100216C30 /* UsDef.swift */; };
+		4BA06EC229A9057B00216C30 /* DataBaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA06EC129A9057B00216C30 /* DataBaseManager.swift */; };
+		4BA335F029A95EA5008C5CE9 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA335EF29A95EA5008C5CE9 /* RegisterViewController.swift */; };
+		4BA335F829ABC79E008C5CE9 /* VerifViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA335F729ABC79E008C5CE9 /* VerifViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4BA06DB22996687E00216C30 /* 3HomeWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 3HomeWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BA06DB52996687E00216C30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4BA06DB72996687E00216C30 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4BA06DB92996687E00216C30 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4BA06DBC2996687E00216C30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4BA06DB92996687E00216C30 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		4BA06DBE2996687E00216C30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4BA06DC12996687E00216C30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4BA06DC32996687E00216C30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BA06DC929966D0700216C30 /* TabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
+		4BA06DCC29966EE900216C30 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		4BA06DCE299679D700216C30 /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
+		4BA06E012998CB0700216C30 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		4BA06E032998CC2900216C30 /* NetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
+		4BA06E9F299FA40A00216C30 /* BasketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketViewController.swift; sourceTree = "<group>"; };
+		4BA06EA1299FB9BA00216C30 /* SelectProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectProductViewController.swift; sourceTree = "<group>"; };
+		4BA06EA3299FDF1700216C30 /* ReviewsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsCollectionViewCell.swift; sourceTree = "<group>"; };
+		4BA06EA729A3AF7700216C30 /* BasketTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketTableViewCell.swift; sourceTree = "<group>"; };
+		4BA06EB629A68D8D00216C30 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4BA06EBE29A7741100216C30 /* UsDef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsDef.swift; sourceTree = "<group>"; };
+		4BA06EC129A9057B00216C30 /* DataBaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseManager.swift; sourceTree = "<group>"; };
+		4BA335EF29A95EA5008C5CE9 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		4BA335F729ABC79E008C5CE9 /* VerifViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifViewController.swift; sourceTree = "<group>"; };
+		6EC1BE3E89A41E22DB1A5E2E /* Pods_3HomeWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_3HomeWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B60B79721D8F120B6C8B3EF9 /* Pods-3HomeWork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-3HomeWork.release.xcconfig"; path = "Target Support Files/Pods-3HomeWork/Pods-3HomeWork.release.xcconfig"; sourceTree = "<group>"; };
+		F7B90EC3BD436F2D8FD112FF /* Pods-3HomeWork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-3HomeWork.debug.xcconfig"; path = "Target Support Files/Pods-3HomeWork/Pods-3HomeWork.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				168186B94F2B3F3E54160AD7 /* Pods_3HomeWork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,8 +69,11 @@
 		4BA06DA92996687E00216C30 = {
 			isa = PBXGroup;
 			children = (
+				4BA06EB629A68D8D00216C30 /* GoogleService-Info.plist */,
 				4BA06DB42996687E00216C30 /* 3HomeWork */,
 				4BA06DB32996687E00216C30 /* Products */,
+				6DB74FA19B35AC738A87F7AA /* Pods */,
+				F06F477A7827F58A535A71BC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +88,107 @@
 		4BA06DB42996687E00216C30 /* 3HomeWork */ = {
 			isa = PBXGroup;
 			children = (
-				4BA06DB52996687E00216C30 /* AppDelegate.swift */,
-				4BA06DB72996687E00216C30 /* SceneDelegate.swift */,
-				4BA06DB92996687E00216C30 /* ViewController.swift */,
-				4BA06DBB2996687E00216C30 /* Main.storyboard */,
-				4BA06DBE2996687E00216C30 /* Assets.xcassets */,
-				4BA06DC02996687E00216C30 /* LaunchScreen.storyboard */,
+				4BA06EBE29A7741100216C30 /* UsDef.swift */,
+				4BA06EB229A4C7DC00216C30 /* Application */,
+				4BA06EBD29A7330200216C30 /* Tabbar */,
+				4BA06EB829A6A7A200216C30 /* Auth */,
+				4BA06EB129A4C7C600216C30 /* Profile */,
+				4BA06EA529A0EE3F00216C30 /* Menu */,
+				4BA06EA629A0EE4E00216C30 /* Select */,
+				4BA06EA929A3AF7B00216C30 /* Basket */,
+				4BA06E012998CB0700216C30 /* Model.swift */,
+				4BA06EC029A9055E00216C30 /* Managers */,
 				4BA06DC32996687E00216C30 /* Info.plist */,
+				4BA06DBE2996687E00216C30 /* Assets.xcassets */,
 			);
 			path = 3HomeWork;
+			sourceTree = "<group>";
+		};
+		4BA06EA529A0EE3F00216C30 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				4BA06DB92996687E00216C30 /* MenuViewController.swift */,
+				4BA06DCE299679D700216C30 /* MenuCollectionViewCell.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		4BA06EA629A0EE4E00216C30 /* Select */ = {
+			isa = PBXGroup;
+			children = (
+				4BA06EA1299FB9BA00216C30 /* SelectProductViewController.swift */,
+				4BA06EA3299FDF1700216C30 /* ReviewsCollectionViewCell.swift */,
+			);
+			path = Select;
+			sourceTree = "<group>";
+		};
+		4BA06EA929A3AF7B00216C30 /* Basket */ = {
+			isa = PBXGroup;
+			children = (
+				4BA06E9F299FA40A00216C30 /* BasketViewController.swift */,
+				4BA06EA729A3AF7700216C30 /* BasketTableViewCell.swift */,
+			);
+			path = Basket;
+			sourceTree = "<group>";
+		};
+		4BA06EB129A4C7C600216C30 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				4BA06DCC29966EE900216C30 /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		4BA06EB229A4C7DC00216C30 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				4BA06DB52996687E00216C30 /* AppDelegate.swift */,
+				4BA06DB72996687E00216C30 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		4BA06EB829A6A7A200216C30 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				4BA335EF29A95EA5008C5CE9 /* RegisterViewController.swift */,
+				4BA335F729ABC79E008C5CE9 /* VerifViewController.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		4BA06EBD29A7330200216C30 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				4BA06DC929966D0700216C30 /* TabbarViewController.swift */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		4BA06EC029A9055E00216C30 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				4BA06E032998CC2900216C30 /* NetworkLayer.swift */,
+				4BA06EC129A9057B00216C30 /* DataBaseManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		6DB74FA19B35AC738A87F7AA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F7B90EC3BD436F2D8FD112FF /* Pods-3HomeWork.debug.xcconfig */,
+				B60B79721D8F120B6C8B3EF9 /* Pods-3HomeWork.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F06F477A7827F58A535A71BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6EC1BE3E89A41E22DB1A5E2E /* Pods_3HomeWork.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +198,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4BA06DC62996687E00216C30 /* Build configuration list for PBXNativeTarget "3HomeWork" */;
 			buildPhases = (
+				DF36A9A902F2097A532E2A94 /* [CP] Check Pods Manifest.lock */,
 				4BA06DAE2996687E00216C30 /* Sources */,
 				4BA06DAF2996687E00216C30 /* Frameworks */,
 				4BA06DB02996687E00216C30 /* Resources */,
+				316556708571425DA4A96F5B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,45 +251,80 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BA06DC22996687E00216C30 /* LaunchScreen.storyboard in Resources */,
 				4BA06DBF2996687E00216C30 /* Assets.xcassets in Resources */,
-				4BA06DBD2996687E00216C30 /* Main.storyboard in Resources */,
+				4BA06EB729A68D8D00216C30 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		316556708571425DA4A96F5B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-3HomeWork/Pods-3HomeWork-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-3HomeWork/Pods-3HomeWork-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-3HomeWork/Pods-3HomeWork-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF36A9A902F2097A532E2A94 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-3HomeWork-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4BA06DAE2996687E00216C30 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BA06DBA2996687E00216C30 /* ViewController.swift in Sources */,
+				4BA06EC229A9057B00216C30 /* DataBaseManager.swift in Sources */,
+				4BA06EA0299FA40A00216C30 /* BasketViewController.swift in Sources */,
+				4BA06EA829A3AF7700216C30 /* BasketTableViewCell.swift in Sources */,
+				4BA06E022998CB0700216C30 /* Model.swift in Sources */,
+				4BA06EA2299FB9BA00216C30 /* SelectProductViewController.swift in Sources */,
+				4BA06EBF29A7741100216C30 /* UsDef.swift in Sources */,
+				4BA06DBA2996687E00216C30 /* MenuViewController.swift in Sources */,
+				4BA335F029A95EA5008C5CE9 /* RegisterViewController.swift in Sources */,
+				4BA06EA4299FDF1700216C30 /* ReviewsCollectionViewCell.swift in Sources */,
 				4BA06DB62996687E00216C30 /* AppDelegate.swift in Sources */,
+				4BA06DCD29966EE900216C30 /* ProfileViewController.swift in Sources */,
+				4BA06E042998CC2900216C30 /* NetworkLayer.swift in Sources */,
+				4BA06DCA29966D0700216C30 /* TabbarViewController.swift in Sources */,
 				4BA06DB82996687E00216C30 /* SceneDelegate.swift in Sources */,
+				4BA06DCF299679D700216C30 /* MenuCollectionViewCell.swift in Sources */,
+				4BA335F829ABC79E008C5CE9 /* VerifViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		4BA06DBB2996687E00216C30 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4BA06DBC2996687E00216C30 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		4BA06DC02996687E00216C30 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4BA06DC12996687E00216C30 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		4BA06DC42996687E00216C30 /* Debug */ = {
@@ -282,6 +443,7 @@
 		};
 		4BA06DC72996687E00216C30 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7B90EC3BD436F2D8FD112FF /* Pods-3HomeWork.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -292,9 +454,8 @@
 				INFOPLIST_FILE = 3HomeWork/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,14 +463,18 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "swiftLessons.-HomeWork";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		4BA06DC82996687E00216C30 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B60B79721D8F120B6C8B3EF9 /* Pods-3HomeWork.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -320,9 +485,8 @@
 				INFOPLIST_FILE = 3HomeWork/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +494,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "swiftLessons.-HomeWork";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
