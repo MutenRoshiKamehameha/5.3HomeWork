@@ -72,14 +72,14 @@ class BasketTableViewCell: UITableViewCell {
     
      var deleteProdButton: UIButton = {
         let button = UIButton()
-        button.setImage(UIImage(systemName: "trash.fill"), for: .normal)
+        button.setImage(UIImage(systemName: "trash"), for: .normal)
         button.tintColor = .systemRed
         return button
      }()
     
+    
     override func awakeFromNib() {
            super.awakeFromNib()
-       
         
        }
        
@@ -115,7 +115,7 @@ class BasketTableViewCell: UITableViewCell {
         
         self.addSubview(tableProdPriceLabel)
         tableProdPriceLabel.snp.makeConstraints { make in
-            make.top.equalTo(tableProdNameLabel.snp.bottom).offset(-8)
+            make.top.equalTo(tableProdNameLabel.snp.bottom).offset(-5)
             make.height.equalTo(30)
             make.width.equalTo(tableProdNameLabel.snp.width)
             make.left.equalToSuperview().offset(30)
@@ -145,9 +145,9 @@ class BasketTableViewCell: UITableViewCell {
         }
         
         self.addSubview(deleteProdButton)
-        rateLabel.snp.makeConstraints { make in
+        deleteProdButton.snp.makeConstraints { make in
             make.bottom.equalTo(rateStar.snp.bottom)
-            make.right.equalTo(rateLabel.snp.left).offset(-8)
+            make.right.equalTo(rateLabel.snp.left).offset(-12)
             make.height.width.equalTo(30)
         }
     }
@@ -157,7 +157,7 @@ class BasketTableViewCell: UITableViewCell {
     func display(item:Product) {
         tableProdNameLabel.text = item.name
         tableProdImage.kf.setImage(with: URL(string: item.image), options: [.processor(roundingCorners)])
-        tableProdPriceLabel.text = "Price: " + item.price
+        tableProdPriceLabel.text = "Price: \(item.price)"
         tableProdCountLabel.text = "Portions: " + item.count
         rateLabel.text = item.rate
     }

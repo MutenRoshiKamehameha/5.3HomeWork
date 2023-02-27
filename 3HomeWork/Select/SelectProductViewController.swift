@@ -167,6 +167,9 @@ And I can't see at all…
         collectionView.layer.cornerRadius = 20
         collectionView.isPagingEnabled = true
         collectionView.showsVerticalScrollIndicator = false
+        collectionView.layer.shadowColor = UIColor.black.cgColor
+        collectionView.layer.shadowOffset = CGSize(width: 3, height: 5)
+        collectionView.layer.shadowOpacity = 0.4
         return collectionView
     }()
     
@@ -180,11 +183,10 @@ And I can't see at all…
     
     private let busketAddingView:UIView = {
         let view = UIView()
-        view.backgroundColor = UIColor(cgColor: CGColor(
-            red: 265/265,
-            green: 100/265,
-            blue: 71/265,
-            alpha: 1))
+        view.backgroundColor = UIColor(cgColor: CGColor(red: 265/265,
+                                                        green: 100/265,
+                                                        blue: 71/265,
+                                                        alpha: 1))
         view.layer.cornerRadius = 23
         view.layer.shadowColor = UIColor.black.cgColor
         view.layer.shadowOffset = CGSize(width: 3, height: 5)
@@ -244,7 +246,16 @@ And I can't see at all…
     private lazy var productPriceLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont(name: "Avenir Heavy", size: 20)
-        label.text = "\(randomPrice) $"
+        label.text = "\(randomPrice)"
+        label.textColor = .white
+        label.textAlignment = .center
+        return label
+    }()
+    
+    private let dollarSign: UILabel = {
+        let label = UILabel()
+        label.font = UIFont(name: "Avenir Heavy", size: 20)
+        label.text = "$"
         label.textColor = .white
         label.textAlignment = .center
         return label
@@ -335,11 +346,21 @@ And I can't see at all…
     }()
     
     
-    private var blurBack: UIVisualEffectView = {
+    private let blurBack: UIVisualEffectView = {
         let effect = UIBlurEffect(style: .systemUltraThinMaterialDark)
         let view = UIVisualEffectView(effect: effect)
         view.isHidden = true
         return view
+    }()
+   
+    private let isEmpty: UILabel = {
+        let label = UILabel()
+        label.text = "There are no comments yet..."
+        label.textAlignment = .right
+        label.textColor = .gray
+        label.numberOfLines = 0
+        label.font = UIFont(name: "Avenir", size: 13)
+        return label
     }()
     
     override func loadView() {
@@ -453,18 +474,27 @@ And I can't see at all…
             make.bottom.equalTo(descriptionTextLabel.snp.bottom)
         }
         
+        view.addSubview(isEmpty)
+        isEmpty.snp.makeConstraints { make in
+            make.right.equalTo(reviewsCollectionView.snp.right).offset(-15)
+            make.left.equalTo(reviewsCollectionView.snp.left).offset(15)
+            make.height.equalTo(40)
+            make.top.equalTo(reviewsCollectionView.snp.top).offset(40)
+           
+        }
+        
         view.addSubview(busketAddingView)
         busketAddingView.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
-            make.width.equalToSuperview().offset(-100)
+            make.width.equalToSuperview().offset(-130)
             make.height.equalTo(60)
-            make.bottom.equalToSuperview().offset(-60)
+            make.bottom.equalToSuperview().offset(-75)
         }
         
         view.addSubview(productCountLabel)
         productCountLabel.snp.makeConstraints { make in
             make.center.equalTo(busketAddingView.snp.center)
-            make.width.equalTo(busketAddingView.snp.width).offset(-180)
+            make.width.equalTo(busketAddingView.snp.width).offset(-200)
             make.height.equalTo(busketAddingView.snp.height).offset(-20)
         }
         
@@ -496,8 +526,16 @@ And I can't see at all…
         view.addSubview(productPriceLabel)
         productPriceLabel.snp.makeConstraints { make in
             make.centerY.equalTo(busketAddingView.snp.centerY)
-            make.right.equalTo(productCountLabel.snp.left).offset(-15)
-            make.left.equalTo(busketAddingView.snp.left).offset(15)
+            make.right.equalTo(productCountLabel.snp.left).offset(-18)
+            make.left.equalTo(busketAddingView.snp.left).offset(12)
+        }
+        
+        view.addSubview(dollarSign)
+        dollarSign.snp.makeConstraints { make in
+            make.centerY.equalTo(busketAddingView.snp.centerY)
+            make.left.equalTo(productPriceLabel.snp.right).inset(13)
+            make.width.equalTo(10.5)
+            make.height.equalTo(15)
         }
         
         view.addSubview(blurBack)
@@ -569,34 +607,18 @@ And I can't see at all…
     
     @objc func plusOneThing(){
         guard productCountLabel.text != "10" else{return}
-        
-        var price = productPriceLabel.text!
-        if let i = price.firstIndex(of: "$") {
-            price.remove(at: i)
-        }
-        if let i = price.firstIndex(of: " ") {
-            price.remove(at: i)
-        }
-        
-        productPriceLabel.text = String(Int(price)! + (Int(price)! / Int(productCountLabel.text!)!)) + " $"
+        let price = productPriceLabel.text
+        productPriceLabel.text = String(Int(price!)! + (Int(price!)! / Int(productCountLabel.text!)!))
         productCountLabel.text = String(Int(productCountLabel.text!)! + 1)
-        
     }
+    
     
     @objc func minususOneThing(){
         guard productCountLabel.text != "1" else{return}
-        
-        var price = productPriceLabel.text!
-        if let i = price.firstIndex(of: "$") {
-            price.remove(at: i)
-        }
-        if let i = price.firstIndex(of: " ") {
-            price.remove(at: i)
-        }
-        
-        productPriceLabel.text = String(Int(price)! - (Int(price)! / Int(productCountLabel.text!)!)) + " $"
+        let price = productPriceLabel.text
+
+        productPriceLabel.text = String(Int(price!)! - (Int(price!)! / Int(productCountLabel.text!)!))
         productCountLabel.text = String(Int(productCountLabel.text!)! - 1)
-        
     }
     
     
@@ -633,23 +655,18 @@ And I can't see at all…
     @objc func okTaped(){
     
         if commentTextField.text != "" || commentTextField.text != " " {
-            UsDef.shared.saveReviews(username: RegisterViewController.shared.userNameTextField.text ?? "Anonimus",
+            UsDef.shared.saveReviews(username: SignUpViewController.shared.userNameTextField.text ?? "Anonimus",
                                      prodName: selectedProductNameLabel.text!,
                                      comment: commentTextField.text!,
                                      rate: "\(starsRateSegment.selectedSegmentIndex + 1)",
                                      date: "\(Date())")
-                                     
-            print(UsDef.shared.savedReviewsArray)
-                
-                
-    
             
           concreteReviewsArray.removeAll()
           checkAreExistReviews()
-            hideAlert()
+          hideAlert()
         }else{
-        }
-    }
+     }
+ }
     
     @objc func cancelTaped(){
         hideAlert()
@@ -704,10 +721,10 @@ extension SelectProductViewController: UICollectionViewDataSource,UICollectionVi
         
         
         if concreteReviewsArray.isEmpty{
-            
+            isEmpty.isHidden = false
             return cell
         } else {
-            
+            isEmpty.isHidden = true
             let product = concreteReviewsArray[indexPath.row]
             cell.displayInfo(product: product)
         }

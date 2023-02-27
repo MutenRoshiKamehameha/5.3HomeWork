@@ -7,9 +7,9 @@
 
 import UIKit
 
-class RegisterViewController: UIViewController {
+class SignUpViewController: UIViewController {
     
-    static let shared = RegisterViewController()
+    static let shared = SignUpViewController()
     
      let userNameTextField: UITextField = {
         let field = UITextField()
@@ -55,7 +55,7 @@ class RegisterViewController: UIViewController {
     private let getCodeButton: UIButton = {
         let button = UIButton()
         button.layer.cornerRadius = 15
-        button.setTitle("GET CODE", for: .normal)
+        button.setTitle("Sign up", for: .normal)
         button.titleLabel?.font = UIFont(name: "Avenir", size: 13)
         button.backgroundColor = .systemRed
         button.titleLabel?.textColor = .black
@@ -72,9 +72,6 @@ class RegisterViewController: UIViewController {
           view.backgroundColor = .black
         
         
-        UsDef.shared.savedReviewsArray.removeAll()
-        UsDef.shared.savedUsersArray.removeAll()
-        UsDef.shared.savedProductsArray.removeAll()
        
       }
     
@@ -129,7 +126,7 @@ class RegisterViewController: UIViewController {
    @objc func getCode(){
      let vc = VerifViewController()
      navigationController?.pushViewController(vc, animated: true)
-//       saveInfo()
+       saveInfo()
    }
    
     

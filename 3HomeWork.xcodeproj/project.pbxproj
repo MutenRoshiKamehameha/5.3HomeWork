@@ -24,8 +24,9 @@
 		4BA06EB729A68D8D00216C30 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4BA06EB629A68D8D00216C30 /* GoogleService-Info.plist */; };
 		4BA06EBF29A7741100216C30 /* UsDef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA06EBE29A7741100216C30 /* UsDef.swift */; };
 		4BA06EC229A9057B00216C30 /* DataBaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA06EC129A9057B00216C30 /* DataBaseManager.swift */; };
-		4BA335F029A95EA5008C5CE9 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA335EF29A95EA5008C5CE9 /* RegisterViewController.swift */; };
+		4BA335F029A95EA5008C5CE9 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA335EF29A95EA5008C5CE9 /* SignUpViewController.swift */; };
 		4BA335F829ABC79E008C5CE9 /* VerifViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA335F729ABC79E008C5CE9 /* VerifViewController.swift */; };
+		4BA335FA29AC8443008C5CE9 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA335F929AC8443008C5CE9 /* SignInViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,8 +48,9 @@
 		4BA06EB629A68D8D00216C30 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4BA06EBE29A7741100216C30 /* UsDef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsDef.swift; sourceTree = "<group>"; };
 		4BA06EC129A9057B00216C30 /* DataBaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseManager.swift; sourceTree = "<group>"; };
-		4BA335EF29A95EA5008C5CE9 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		4BA335EF29A95EA5008C5CE9 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		4BA335F729ABC79E008C5CE9 /* VerifViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifViewController.swift; sourceTree = "<group>"; };
+		4BA335F929AC8443008C5CE9 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		6EC1BE3E89A41E22DB1A5E2E /* Pods_3HomeWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_3HomeWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B60B79721D8F120B6C8B3EF9 /* Pods-3HomeWork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-3HomeWork.release.xcconfig"; path = "Target Support Files/Pods-3HomeWork/Pods-3HomeWork.release.xcconfig"; sourceTree = "<group>"; };
 		F7B90EC3BD436F2D8FD112FF /* Pods-3HomeWork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-3HomeWork.debug.xcconfig"; path = "Target Support Files/Pods-3HomeWork/Pods-3HomeWork.debug.xcconfig"; sourceTree = "<group>"; };
@@ -151,7 +153,8 @@
 		4BA06EB829A6A7A200216C30 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				4BA335EF29A95EA5008C5CE9 /* RegisterViewController.swift */,
+				4BA335F929AC8443008C5CE9 /* SignInViewController.swift */,
+				4BA335EF29A95EA5008C5CE9 /* SignUpViewController.swift */,
 				4BA335F729ABC79E008C5CE9 /* VerifViewController.swift */,
 			);
 			path = Auth;
@@ -312,10 +315,11 @@
 				4BA06EA2299FB9BA00216C30 /* SelectProductViewController.swift in Sources */,
 				4BA06EBF29A7741100216C30 /* UsDef.swift in Sources */,
 				4BA06DBA2996687E00216C30 /* MenuViewController.swift in Sources */,
-				4BA335F029A95EA5008C5CE9 /* RegisterViewController.swift in Sources */,
+				4BA335F029A95EA5008C5CE9 /* SignUpViewController.swift in Sources */,
 				4BA06EA4299FDF1700216C30 /* ReviewsCollectionViewCell.swift in Sources */,
 				4BA06DB62996687E00216C30 /* AppDelegate.swift in Sources */,
 				4BA06DCD29966EE900216C30 /* ProfileViewController.swift in Sources */,
+				4BA335FA29AC8443008C5CE9 /* SignInViewController.swift in Sources */,
 				4BA06E042998CC2900216C30 /* NetworkLayer.swift in Sources */,
 				4BA06DCA29966D0700216C30 /* TabbarViewController.swift in Sources */,
 				4BA06DB82996687E00216C30 /* SceneDelegate.swift in Sources */,

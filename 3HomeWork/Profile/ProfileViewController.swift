@@ -330,7 +330,7 @@ class ProfileViewController: UIViewController {
     }
     
         @objc func exitTaped(){
-            let vc = RegisterViewController()
+            let vc = SignUpViewController()
             navigationController?.pushViewController(vc, animated: true)
         }
     
@@ -355,7 +355,7 @@ class ProfileViewController: UIViewController {
             
             editInfoButton.setImage(UIImage(systemName: "pencil.circle.fill"), for: .normal)
             
-            usernameTextField.isEnabled = true
+            usernameTextField.isEnabled = false
             phoneTextField.isEnabled = false
             datePicker.isEnabled = false
             addressTextField.isEnabled = false
